@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon-16x16.png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Manrope:wght@200..800&family=Niconne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link rel="stylesheet" href="../CSS/home.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a href="../index.html"
+        ><img
+          src="../images/LogoHeader.svg"
+          alt="Logo"
+          class="logo"
+          width="90px"
+      /></a>
+    </header>
+    <main>
+      <!-- Menu Hamburguer -->
+      <section>
+        <div class="hamburguer" onclick="toggleMenu()">
+          <span class="material-icons icon">menu</span>
+          <!-- Esse é o ícone de hamburguer -->
+        </div>
+        <!-- Menu Lateral flutuante -->
+        <nav class="sidebar">
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="../images/LogoFleur.svg" alt="logo do aplicativo" />
+                Calendário de Vacinas</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images/LogoFleur.svg"
+                  alt="logo do aplicativo"
+                />Controle Gestacional</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images/LogoFleur.svg"
+                  alt="logo do aplicativo"
+                />Plano de Parto</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images/LogoFleur.svg"
+                  alt="logo do aplicativo"
+                />Saúde Mental</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images/LogoFleur.svg"
+                  alt="logo do aplicativo"
+                />Guia da Gestante</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images/LogoFleur.svg"
+                  alt="logo do aplicativo"
+                />Configurações</a
+              >
+            </li>
+            <!-- Novo link para sair do app -->
+            <li>
+              <a href="#" class="logout-link"
+                ><span class="material-icons">exit_to_app</span>Sair</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Imagem, nome e semanas do bebê -->
+      <section>
+        <div class="container-titulos">
+          <h1 class="titulo">Home</h1>
+          <h2 class="titulo2">Olá Julia! Seja Bem vinda!</h2>
+        </div>
+
+        <div class="container-imagem-bebe">
+          <img src="../images/ImagemBebe.png" alt="imagem de um bebê" />
+        </div>
+
+        <h2 class="nomeBebe">Beatriz</h2>
+        <p class="semanasDoBebe">17 semanas</p>
+      </section>
+
+      <!-- Humor do dia -->
+      <section class="humor">
+        <h2>Como está seu humor hoje?</h2>
+        <div>
+          <span class="emoji" onclick="selecionarEmoji(this)">&#128578;</span>
+          <span class="emoji" onclick="selecionarEmoji(this)">&#128529;</span>
+          <span class="emoji" onclick="selecionarEmoji(this)">&#129392;</span>
+          <span class="emoji" onclick="selecionarEmoji(this)">&#128532;</span>
+          <span class="emoji" onclick="selecionarEmoji(this)">&#128544;</span>
+        </div>
+      </section>
+
+      <!-- Links para informações importantes -->
+
+      <section>
+        <div class="info-importantes">
+            <h2>Confira informações importantes:</h2>
+        </div>
+
+        <div class="button-container">
+            <button class="custom-button">
+              <span class="left-icon material-icons">calendar_today</span>
+              <!-- Ícone à esquerda -->
+              <p class="texto-button">SUA AGENDA</p>
+              <span class="right-icon">&gt;</span>
+              <!-- Setinha à direita -->
+            </button>
+            <button class="custom-button">
+              <span class="left-icon material-icons">shopping_bag</span>
+              <!-- Ícone à esquerda -->
+              <p class="texto-button">BOLSA MATERNIDADE</p>
+              <span class="right-icon">&gt;</span>
+              <!-- Setinha à direita -->
+            </button>
+            <button class="custom-button">
+              <span class="left-icon material-icons">description</span>
+              <!-- Ícone à esquerda -->
+              <p class="texto-button">CARTEIRA DA GESTANTE</p>
+              <span class="right-icon">&gt;</span>
+              <!-- Setinha à direita -->
+            </button>
+          </div>
+      </section>
+    </main>
+    <script src="../../Backend/home.js"></script>
+  </body>
+</html>

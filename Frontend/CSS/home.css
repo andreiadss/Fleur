@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #f3f3f3;
+}
+
+.cabecalho {
+  background-color: #762c61;
+  display: flex;
+  justify-content: center;
+}
+
+/* Ícone Hamburguer */
+.hamburguer {
+  cursor: pointer;
+  position: fixed;
+  top: 1px;
+  left: 20px;
+  z-index: 2; /* Garante que o ícone fique na frente */
+  background: transparent;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Começa escondido */
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #461f3b,
+    #531a43,
+    rgba(103, 65, 92, 0.5)
+  );
+  color: white;
+  padding-top: 80px; /* Espaço para o menu não encostar no topo */
+  transition: left 0.3s ease, background 0.5s ease; /* Animação suave */
+  border-top-right-radius: 50px;
+}
+
+/* Estilo do menu lateral */
+.sidebar ul {
+  list-style-type: none; /* Remove os marcadores de lista */
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center; /* Alinha a imagem e o texto na mesma linha */
+  margin-bottom: 10px; /* Espaço entre os itens */
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: black; /* Cor do texto */
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  align-items: center; /* Garante que o texto fique alinhado com a imagem */
+}
+
+.sidebar a img {
+  width: 24px; /* Ajuste o tamanho da imagem */
+  height: 24px; /* Ajuste o tamanho da imagem */
+  margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.sidebar ul li {
+  padding: 15px;
+  text-align: left;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: "Manjari", sans-serif;
+}
+
+.sidebar ul li:hover {
+  background: #7f3e6c;
+}
+
+/* Quando o menu estiver ativo, ele aparece */
+.sidebar.active {
+  left: 0; /* Volta para a posição visível */
+}
+
+/* Estilo do link de logout */
+.logout-link {
+  color: red; /* Cor vermelha para indicar logout */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.logout-link .material-icons {
+  font-size: 24px; /* Ajuste o tamanho do ícone */
+  margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+/* Home, e saudações da gestante */
+.container-titulos {
+  text-align: center;
+  font-family: "Manjari", sans-serif;
+}
+.titulo {
+  font-size: xx-large;
+  color: #762c61;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.titulo2 {
+  font-size: small;
+  color: rgb(75, 75, 75);
+}
+
+/* Contêiner da imagem */
+.container-imagem-bebe {
+  display: flex;
+  justify-content: center; /* Centraliza a imagem horizontalmente */
+  margin-top: 10px;
+}
+
+/* Nome do bebê */
+.nomeBebe {
+  text-align: left; /* Alinha o texto à esquerda */
+  font-size: large;
+  color: #762c61;
+  font-family: "Manjari", sans-serif;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Semanas do bebê */
+.semanasDoBebe {
+  text-align: left; /* Alinha o texto à esquerda */
+  font-size: small;
+  color: rgb(75, 75, 75);
+  font-family: "Manjari", sans-serif;
+  margin-top: 2px;
+  text-align: center;
+}
+
+/* Como está seu humor hoje? */
+.humor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.humor h2 {
+  text-align: center;
+  font-size: small;
+  color: #762c61;
+  font-family: "Manjari", sans-serif;
+  margin: 0;
+}
+
+.humor div {
+  display: flex;
+  flex-flow: row nowrap; /* Alinha os emojis na horizontal */
+  justify-content: center; /* Centraliza os emojis horizontalmente */
+  gap: 3px; /* Espaçamento entre os emojis */
+}
+
+/* emojis de humor */
+.emoji {
+  font-size: 25px;
+  cursor: pointer;
+  width: 40px; /* Garantindo um círculo perfeito */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Deixa o círculo perfeito */
+  transition: transform 0.2s;
+}
+
+.emoji:hover {
+  transform: scale(1.2); /* Só para dar um efeito quando passar o mouse */
+}
+
+.selecionado {
+  border: 3px solid #b631ef; /* Borda para indicar o emoji selecionado */
+  background-color: rgba(
+    220,
+    105,
+    255,
+    0.2
+  ); /* Fundo rosa claro para destacar */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Informações importantes */
+.info-importantes h2 {
+  font-family: 'Manjari', sans-serif;
+  color: #762c61;
+  font-size: small;
+  margin-top: 25px;
+  text-align: center;
+}
+
+
+/* Contêiner dos botões */
+.button-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;  /* Alinha os botões no centro horizontal */
+  justify-content: center; /*Centraliza os botões verticalmente se a altura for maior*/
+  height: 30vh; /*A altura da página será 100% da viewport*/
+  text-align: left; /*Garante que o texto do botão também fique centralizado*/
+}
+
+/* Estilo do botão */
+.custom-button {
+  display: flex;
+  align-items: center; /* Alinha o texto e ícones */
+  justify-content: space-between; /* Espaça o texto e os ícones */
+  background-color: #fdfdfd;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  color: rgb(75, 75, 75);
+  font-size: 14px;
+  font-family: "Manjari", sans-serif;
+  font-weight: 700;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 2px;
+  width: 280px; /*Largura dos botões*/
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} 
+
+.custom-button .texto-button {
+  margin: 0; /* Remove a margem padrão do parágrafo */
+  padding-top: 10px;
+}
+/* Ícone à esquerda */
+.left-icon {
+  margin-right: 10px; /* Espaço entre o ícone e o texto */
+  background-color: #cccccc;
+  padding: 4px;
+  border-radius: 5px;
+  color:#762c61;
+}
+
+/* Ícone da setinha à direita */
+.right-icon {
+  margin-left: 10px; /* Espaço entre o texto e a setinha */
+  font-size:x-large;
+  padding-top: 8px;
+}
+
+/* Efeito de hover para o botão */
+.custom-button:hover {
+  background-color: #d59edd; /* Cor de fundo ao passar o mouse */
+}
+

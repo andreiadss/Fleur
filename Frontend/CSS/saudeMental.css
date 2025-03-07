@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #f3f3f3;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  padding: 2% 20%;
+  margin-top: 30px;
+  
+}
+
+.cabecalho {
+  background-color: #762c61;
+  display: flex;
+  justify-content: center;
+}
+
+/* Ícone Hamburguer */
+.hamburguer {
+  cursor: pointer;
+  position: fixed;
+  top: 1px;
+  left: 20px;
+  z-index: 2; /* Garante que o ícone fique na frente */
+  background: transparent;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Começa escondido */
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #461f3b,
+    #531a43,
+    rgba(103, 65, 92, 0.5)
+  );
+  color: white;
+  padding-top: 80px; /* Espaço para o menu não encostar no topo */
+  transition: left 0.3s ease, background 0.5s ease; /* Animação suave */
+  border-top-right-radius: 50px;
+}
+
+
+
+/* Estilo do menu lateral */
+.sidebar ul {
+  list-style-type: none; /* Remove os marcadores de lista */
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center; /* Alinha a imagem e o texto na mesma linha */
+  margin-bottom: 10px; /* Espaço entre os itens */
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: black; /* Cor do texto */
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  align-items: center; /* Garante que o texto fique alinhado com a imagem */
+}
+
+.sidebar a img {
+  width: 24px; /* Ajuste o tamanho da imagem */
+  height: 24px; /* Ajuste o tamanho da imagem */
+  margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.sidebar ul li {
+  padding: 15px;
+  text-align: left;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: "Manjari", sans-serif;
+}
+
+.sidebar ul li:hover {
+  background: #7f3e6c;
+}
+
+/* Quando o menu estiver ativo, ele aparece */
+.sidebar.active {
+  left: 0; /* Volta para a posição visível */
+}
+
+/* Estilo do link de logout */
+.logout-link {
+  color: red; /* Cor vermelha para indicar logout */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.logout-link .material-icons {
+  font-size: 24px; /* Ajuste o tamanho do ícone */
+  margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+/* Home, e saudações da gestante */
+.container-titulos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Manjari", sans-serif;
+  gap: 20px;
+}
+
+.titulo {
+  font-size: xx-large;
+  color: #762c61;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.titulo2 {
+  text-align: center;
+  font-size: medium;
+  color: rgb(75, 75, 75);
+
+}
+
+
+/* Nome do bebê */
+.informacoes-importantes {
+  text-align: left; /* Alinha o texto à esquerda */
+  font-size: large;
+  color: #762c61;
+  font-family: "Manjari", sans-serif;
+  margin-top: 10px;
+  text-align: left;
+}
+
+
+
+/* Informações importantes */
+.info-importantes h2 {
+  font-family: 'Manrope', sans-serif;
+  color: #762c61;
+  font-size: small;
+  margin-top: 25px;
+  text-align: center;
+}
+
+/* informações em cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.8em;
+  color: #4d2c41;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.btn-info {
+  
+  color: rgb(75, 75, 75);
+  padding: 10px 80px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  display: inline-flex;
+  align-items: right;
+  gap: 10px;
+  transition: background 0.3s, box-shadow 0.3s; /* Transição suave */
+  
+}
+
+/* .btn-info:hover {
+  background: #ffffff;
+  color: #82004a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+} */
+
+.btn-info:hover {
+  
+  color: #82004a; /* Cor do texto ao passar o mouse */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombreamento suave */
+}
+
+.btn-info img {
+  width: 20px;
+  height: 20px;
+}

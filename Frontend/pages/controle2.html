@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon-16x16.png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&family=Manrope:wght@200..800&family=Niconne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link rel="stylesheet" href="../CSS/controle2.css" />
+    <title>Controle Gestacional</title>
+  </head>
+<!-- header -->
+
+  <body>
+    <header class="cabecalho">
+      <a href="../index.html"
+        ><img
+          src="../images/LogoHeader.svg"
+          alt="Logo"
+          class="logo"
+          width="90px"
+      /></a>
+    </header>
+    <main>
+      <!-- Menu Hamburguer -->
+      <section>
+        <div class="hamburguer" onclick="toggleMenu()">
+          <span class="material-icons icon">menu</span>
+          <!-- Esse é o ícone de hamburguer -->
+        </div>
+        <!-- Menu Lateral flutuante -->
+        <nav class="sidebar">
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="../images/LogoFleur.svg" alt="logo do aplicativo" />
+                Calendário de Vacinas</a
+              >
+            </li>
+            <li>
+              <a href="../pages/controle1.html"
+                ><img
+                  src="../images/LogoFleur.svg"
+                  alt="logo do aplicativo"
+                />Controle Gestacional</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images/LogoFleur.svg"
+                  alt="logo do aplicativo"
+                />Plano de Parto</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images/LogoFleur.svg"
+                  alt="logo do aplicativo"
+                />Saúde Mental</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images/LogoFleur.svg"
+                  alt="logo do aplicativo"
+                />Guia da Gestante</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images/LogoFleur.svg"
+                  alt="logo do aplicativo"
+                />Configurações</a
+              >
+            </li>
+            <!-- Novo link para sair do app -->
+            <li>
+              <a href="#" class="logout-link"
+                ><span class="material-icons">exit_to_app</span>Sair</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+   <section>
+    <div class="container">
+        <form id="cadastroForm">
+            <div class="title-container">
+                <h1>Controle Gestacional</h1>
+                <p>09 de dezembro - 21 semanas e 3 dias</p>
+                <p>Seu bebê nesta semana:</p>
+                <img src="/Frontend/images/Feto-semana-11.png" alt="Imagem do bebê" class="baby-image">
+                
+            </div>
+            <div class="info-box">
+                <img src="/Frontend/images/straighten_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Ícone de comprimento" class="info-icon">
+                <div class="info-text">
+                    <h2>Comprimento do bebê:</h2>
+                    <p>O seu bebê está com 43cm</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <img src="/Frontend/images/balance_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Ícone de peso" class="info-icon">
+                <div class="info-text">
+                    <h2>Peso:</h2>
+                    <p>O seu bebê está com 2kg</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <img src="/Frontend/images/content_paste_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="Ícone de informações" class="info-icon">
+                <div class="info-text">
+                    <h2>Informações adicionais:</h2>
+                    <p>As medidas são aproximadas e podem variar dentro da faixa normal.</p>
+                </div>
+            </div>
+
+            
+
+            <div class="input-field">
+                <label>Informações adicionais:</label>
+                <input type="text" name="informacoesAdicionais" placeholder="">
+            </div>
+            <div class="button-container">
+                <button class="button">Salvar e Gerar</button>
+            </div>
+        </form>
+    </div>
+   </section>
+   </main>
+   <script src="../../Backend/controle1.js"></script>
+    
+</body>

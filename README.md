@@ -30,7 +30,7 @@
 ## Sistema Operacional
 ![Windows](https://img.shields.io/badge/Windows-000?style=for-the-badge&logo=windows&logoColor=2CA5E0)
 
-### Protótipo
+## Protótipo
 - [Figma](https://www.figma.com/design/mONQ977jHDhELpwxCIkedK/PI---Telas-APP-Sa%C3%BAde?node-id=0-1&t=TyP92tBtDJBKhFID-1)
 - [Figma Jornada do Usuário](https://www.figma.com/design/vwN8LmA5Dr5veBVYwMjupT/Telas---SEGUNDA-ENTREGA?node-id=0-1&t=4g9Ilw3au5olOaXw-1)
 

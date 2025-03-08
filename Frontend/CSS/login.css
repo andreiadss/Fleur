@@ -124,3 +124,9 @@ input::placeholder {
   font-family: 'Manrope';
   padding: 12px;
 }
+
+.hidden {
+  display: none;
+  color: red;
+  margin-top: 1rem;
+}

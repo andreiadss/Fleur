@@ -17,33 +17,33 @@
 
 <body>
     <div class='container'>
-        <form>
+        <form id="loginForm">
           <div class="logotipo"><img src="../images/LogoFleur.svg" alt="Logo do site" width="150px"/> </div>
           
           <h1>Acesse sua conta</h1>
         <div class="input-field">
-            <input name="nomeUsuario" placeholder="Nome de Usuário" type="text">
+            <input id="nomeUsuario" name="nomeUsuario" placeholder="Nome de Usuário" type="text">
             <span class="material-icons icon">person</span>
         </div>
 
           <div class="input-field">
-            <input password='senhaUsuario' placeholder='Senha' type='password' />
+            <input id="senhaUsuario" name="senhaUsuario" placeholder='Senha' type='password' />
             <span class="material-icons icon">lock</span>
         </div>
   
-          <button type='button'>Entrar</button>
+          <button type='submit'>Entrar</button>
 
             <div class='signup-link'>
-                <a href="">Criar Conta</a> 
+                <a href="./criarConta.html">Criar Conta</a> 
             </div>
+
+            <p id="errorMessage" class="hidden"></p> <!-- Mensagem de erro -->
         </form>
-
-
-           
 
         </div>
     </div>
 
+<script src="../../Backend/login.js"></script>
 </body>
 
 </html>

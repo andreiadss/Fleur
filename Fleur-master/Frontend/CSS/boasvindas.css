@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fffaf8;
+    font-family: 'Manrope', sans-serif;
+}
+
+.img a{
+    max-width: 100rem;
+    height: 5rem;
+    display: flex;
+    justify-content: right;
+    padding: 15px;
+}
+
+.textos {
+    padding: 160px 0px 0px 35px;
+    color: #762c61;
+}
+
+.texto1 {
+    font-weight: 100;
+}
+
+.buttons {
+    border-radius: 40px;
+    padding: 19px;
+    display: flex;
+    flex-direction: column;
+    width: 13.5rem;
+    text-align: center;    
+}
+
+.buttons a {
+    text-decoration: none;
+}
+.btcadastro {
+    background-color: #762c61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    margin: 10px;
+}
+
+.btlogin {
+    background-color: #fffaf8;
+    color: #762c61;
+    padding: 10px 20px;
+    border: 2px solid #762c61;
+    border-radius: 40px;
+    margin: 10px;
+}

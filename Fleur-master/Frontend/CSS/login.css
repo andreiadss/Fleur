@@ -1,0 +1,132 @@
+/* Variaveis */
+
+:root {
+    --offwhite: #ecebe9;
+    --darkPurple: #762c61;
+    --whiteApp: #fffaf8;
+    --soft-grey: #B0B0B0;
+  }
+
+  /* Zerando estilos*/
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+  }
+
+/* LOGOTIPO */
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .logotipo img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    align-items: center;
+  }
+
+  .logotipo{
+    width: 113px;
+    height: 104px;
+    align-items: center;
+    max-width: 90rem;
+    height: 5rem;
+    display: flex;
+    justify-content: right;
+    padding: 15px;
+  }
+  
+h1 {
+  color: var(--darkPurple);
+  font-size: 24px;
+}
+
+/*
+  Formulário
+*/
+
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 100px 30px 30px 30px;
+  margin-bottom: 20px;
+}
+
+ button {
+    border-radius: 8px;
+    background-color: var(--darkPurple);
+    color: var(--whiteApp);
+    width: 150px;
+    height: 43px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+.input-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    padding-left: 13px;
+}
+
+.input-field .icon {
+    position: absolute;
+    left: 225px;
+    color: var(--darkPurple);
+    font-size: 20px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px 10px 10px 15px; 
+    border-radius: 56px;
+    font-size: 12px;
+    border: 1px solid #dddddd;
+    height: 28px;
+    width: 280px;
+    background-color: transparent;
+    color: var(--darkPurple);
+    outline: none;
+}
+
+/* Link Criar Conta */
+
+.signup-link {
+  text-align: center;
+  font-family: 'Manrope';
+}
+
+a {
+  text-decoration: none;
+  color: var(--darkPurple);
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input::placeholder {
+  color: var(--darkPurple);
+  font-family: 'Manrope';
+  padding: 12px;
+}
+
+.hidden {
+  display: none;
+  color: red;
+  margin-top: 1rem;
+}

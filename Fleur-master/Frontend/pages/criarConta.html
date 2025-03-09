@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../CSS/criarConta.css">
+    <title>Criar Conta</title>
+</head>
+<body>
+    <div class='container'>
+        <form id="criarContaForm">
+            <div class="logotipo">
+                <img src="../images/LogoFleur.svg" alt="Logo do site" width="150px">
+            </div>
+            <h1>Criar conta</h1>
+            <p>Faça parte do Fleur! Uma comunidade de apoio à maternidade de gestantes num geral.</p>
+
+            <div class="input-field">
+                <input id="nomeUsuario" name="nomeUsuario" placeholder="Nome de Usuário" type="text" required>
+                <span class="material-icons icon">person</span>
+            </div>
+
+            <div class="input-field">
+                <input id="emailUsuario" name="emailUsuario" placeholder="E-mail" type="email" required>
+                <span class="material-icons icon">email</span>
+            </div>
+
+            <div class="input-field">
+                <input id="senhaUsuario" name="senhaUsuario" placeholder="Senha" type="password" required>
+                <span class="material-icons icon">lock</span>
+            </div>
+
+            <div class="input-field">
+                <input id="confirmarSenha" name="confirmarSenha" placeholder="Confirmar Senha" type="password" required>
+                <span class="material-icons icon">lock</span>
+            </div>
+
+            <button type='submit'>Próximo</button>
+        </form>
+    </div>
+    
+    <script type="module" src="../../Backend/criarConta.js"></script>
+</body>
+</html>

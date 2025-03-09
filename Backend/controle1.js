@@ -37,3 +37,27 @@ function toggleMenu() {
           window.location.href = "";
       });
     });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuLinks = document.querySelectorAll(".sidebar a[data-link]");
+      
+        menuLinks.forEach((link) => {
+          link.addEventListener("click", function (event) {
+            event.preventDefault(); 
+            const destino = this.getAttribute("data-link"); 
+            window.location.href = destino; 
+          });
+        });
+      });
+  
+      document.addEventListener("DOMContentLoaded", function () {
+        const botaoSalvar = document.getElementById("salvarGerarBtn");
+      
+        botaoSalvar.addEventListener("click", function (event) {
+          event.preventDefault(); 
+
+          window.location.href = "controle2.html";
+        });
+      });
+      
+      

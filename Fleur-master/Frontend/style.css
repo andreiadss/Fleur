@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #762c61;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imagem {
+    padding-top: 200px;
+}
+
+.imagem .imagemLogo a {
+    max-width: 100rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 300px 0px 0px 0px;
+}
+
+
+h1 {
+    font-size: 4rem;
+    font-weight: 200;
+    background-image: linear-gradient(to bottom, #efbad3, #ae71ef, #490c9f );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Niconne', cursive;
+    padding-left: 3%;
+}
+

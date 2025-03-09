@@ -1,25 +1,20 @@
-document.getElementById("loginForm").addEventListener("submit", function (event) {
+import { auth } from "./firebase.js";
+import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
+
+document.getElementById("loginForm").addEventListener("submit", async function (event) {
     event.preventDefault(); // Impede o recarregamento da página
-  
-    const nomeUsuario = document.getElementById("nomeUsuario");
-    const senhaUsuario = document.getElementById("senhaUsuario");
-    const errorMessage = document.getElementById("errorMessage");
-  
-    if (nomeUsuario.value.trim() === "" || senhaUsuario.value.trim() === "") {
-      errorMessage.textContent = "Preencha todos os campos!";
-      errorMessage.classList.remove("hidden");
-  
-      nomeUsuario.classList.add("error");
-      senhaUsuario.classList.add("error");
-  
-      nomeUsuario.focus();
-    } else {
-      errorMessage.classList.add("hidden");
-      nomeUsuario.classList.remove("error");
-      senhaUsuario.classList.remove("error");
-  
-      alert(`Bem-vindo, ${nomeUsuario.value}!`);
-      window.location.href = "home.html"; // Redirecionamento
+
+    const email = document.getElementById("emailUsuario").value.trim();
+    const senha = document.getElementById("senhaUsuario").value;
+
+    try {
+        const userCredential = await signInWithEmailAndPassword(auth, email, senha);
+        const user = userCredential.user;
+
+        alert(`Bem-vindo, ${email}!`);
+        window.location.href = "home.html"; // Redireciona para a Home após login
+    } catch (error) {
+        console.error("Erro ao fazer login:", error);
+        alert("Erro ao fazer login: " + error.message);
     }
-  });
-  
+});

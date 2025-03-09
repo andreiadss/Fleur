@@ -21,15 +21,16 @@
           <div class="logotipo"><img src="../images/LogoFleur.svg" alt="Logo do site" width="150px"/> </div>
           
           <h1>Acesse sua conta</h1>
-        <div class="input-field">
-            <input id="nomeUsuario" name="nomeUsuario" placeholder="Nome de Usuário" type="text">
-            <span class="material-icons icon">person</span>
-        </div>
 
           <div class="input-field">
-            <input id="senhaUsuario" name="senhaUsuario" placeholder='Senha' type='password' />
+            <input id="emailUsuario" name="emailUsuario" placeholder="Digite seu e-mail" type="email" required>
+            <span class="material-icons icon">mail</span>
+          </div>
+
+          <div class="input-field">
+            <input id="senhaUsuario" name="senhaUsuario" placeholder='Senha' type='password' required>
             <span class="material-icons icon">lock</span>
-        </div>
+          </div>
   
           <button type='submit'>Entrar</button>
 
@@ -40,10 +41,11 @@
             <p id="errorMessage" class="hidden"></p> <!-- Mensagem de erro -->
         </form>
 
-        </div>
     </div>
 
-<script src="../../Backend/login.js"></script>
+<!-- Agora chamando corretamente o login.js do Backend -->
+<script type="module" src="../../Backend/login.js"></script>
+
 </body>
 
 </html>

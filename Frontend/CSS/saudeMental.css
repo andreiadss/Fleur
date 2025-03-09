@@ -135,8 +135,9 @@ main{
 
 .titulo2 {
   text-align: center;
-  font-size: medium;
+  font-size: 14px;
   color: rgb(75, 75, 75);
+  width: 85%;
 
 }
 
@@ -144,11 +145,12 @@ main{
 /* Nome do bebê */
 .informacoes-importantes {
   text-align: left; /* Alinha o texto à esquerda */
-  font-size: large;
+  font-size: 16px;
   color: #762c61;
   font-family: "Manjari", sans-serif;
   margin-top: 10px;
   text-align: left;
+  width: 80%;
 }
 
 
@@ -166,7 +168,7 @@ main{
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 5px;
   padding: 20px;
 
 }

@@ -17,4 +17,17 @@ function selecionarEmoji(emojiClicado) {
     // Depois, adiciona a classe só no emoji que foi clicado
     emojiClicado.classList.add('selecionado');
   }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuLinks = document.querySelectorAll(".sidebar a[data-link]");
+  
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", function (event) {
+        event.preventDefault(); 
+        const destino = this.getAttribute("data-link"); 
+        window.location.href = destino; 
+      });
+    });
+  });
+  
   

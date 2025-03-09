@@ -112,16 +112,14 @@ body {
   text-align: center;
   font-family: "Manjari", sans-serif;
 }
+
 .titulo {
-  font-size: xx-large;
+  font-size: 25px;
   color: #762c61;
   margin-top: 40px;
   margin-bottom: 10px;
-}
-
-.titulo2 {
-  font-size: small;
-  color: rgb(75, 75, 75);
+  font-family: "Manjari", sans-serif;
+  font-weight: 900;
 }
 
 /* Contêiner da imagem */

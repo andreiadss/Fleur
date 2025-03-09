@@ -12,3 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Cadastro enviado", formData);
     });
 });
+
+document.getElementById("cadastroForm").addEventListener("submit", function (event) {
+    event.preventDefault(); 
+
+    window.location.href = "home.html"; 
+});

@@ -11,6 +11,8 @@
 </p>
 
 ---
+## Sobre o APP
+<p align="justify">O presente projeto apresenta o desenvolvimento do aplicativo mobile Fleur, uma solução tecno-lógica inovadora projetada exclusivamente para gestantes. Com o objetivo de centralizar infor-mações gestacionais em uma única plataforma, o Fleur combina segurança, praticidade e supor-te, oferecendo funcionalidades como registro de exames, acompanhamento de vacinas, lembre-tes personalizados e orientações sobre saúde mental. Destaca-se por seu design intuitivo e recur-sos personalizáveis, garantindo acessibilidade para usuárias iniciantes e atendendo às necessida-des específicas das gestantes. Com foco na organização e facilidade de acesso às informações, o aplicativo busca se consolidar como referência no cuidado materno, promovendo uma gestão eficiente e integrada da saúde física e mental durante toda a gestação.</p>
 
 ## Alunos: 
  - [Andreia dos Santos Silva](https://github.com/andreiadss)
@@ -61,10 +63,10 @@
 
 #### Para executar
 
-Clone este projeto atráves do comando `git clone`:
+1. Clone este projeto atráves do comando `git clone`:
 ```
 git clone https://github.com/andreiadss/Fleur.git
 ```
-Abra o arquivo index.html no navegador para acessar a página inicial.<br>
-Clique em 'Criar Conta' e insira Nome de usuário e Senha e clique em 'Entrar".<br>
-Navegue pelas diferentes páginas e funcionalidades do sistema.
+2. Abra o arquivo index.html no navegador para acessar a página inicial.<br>
+3. Clique em 'Criar Conta' e insira Nome de usuário e Senha e clique em 'Entrar".<br>
+4. Navegue pelas diferentes páginas e funcionalidades do sistema.

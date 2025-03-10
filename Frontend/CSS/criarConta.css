@@ -1,144 +1,148 @@
 :root {
-  --offwhite: #ecebe9;
-  --darkPurple: #762c61;
-  --whiteApp: #fffaf8;
-  --soft-grey: #B0B0B0;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Manrope', sans-serif;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: var(--whiteApp);
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.logotipo {
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.logotipo img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-h1 {
-  color: var(--darkPurple);
-  font-size: 24px;
+    --offwhite: #ecebe9;
+    --darkPurple: #762c61;
+    --whiteApp: #fffaf8;
+    --soft-grey: #B0B0B0;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .logotipo img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    align-items: center;
+  }
+  
+  .logotipo{
+    width: 100px;
+    align-items: center;
+    max-width: 90rem;
+    display: flex;
+    justify-content: right;
+    padding: 0px;
+    margin-top: 30px;
+  }
+  
+  h1 {
+    color: var(--darkPurple);
+    font-size: 24px;
+  }
+  
+  h2 {
+    text-align: center;  /* Centraliza o texto */
+    max-width: 26%;  /* Limita a largura para evitar que o texto fique muito esticado */
+    margin: 0 auto;  /* Centraliza horizontalmente */
+    
+    overflow-wrap: break-word; /* Alternativa para garantir quebra de texto */
+    font-size: 14px; /* Ajuste conforme necessário */
+    color: grey;
+    font-weight: 400; /* Deixa a fonte mais leve */
+    margin-bottom: 20px;
+  
+  }
+  
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 100px 30px 30px 30px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    border-radius: 8px;
+    background-color: var(--darkPurple);
+    color: var(--whiteApp);
+    width: 150px;
+    height: 43px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .input-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 275px;
+    text-align: left;
+  }
+  
+  .input-field input {
+    width: 100%;
+    padding: 8px 12px; /* Ajuste para melhor espaçamento */
+    border-radius: 56px;
+    font-size: 12px;
+    border: 1px solid #dddddd;
+    height: 28px;
+    background-color: transparent;
+    color: var(--darkPurple);
+    outline: none;
+    line-height: 1.5; /* Ajuste para alinhar melhor */
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-field .icon {
+    position: absolute;
+    right: 10px;
+    color: var(--darkPurple);
+    font-size: 20px;
+  }
+  
+  input::placeholder {
+    color: var(--darkPurple);
+    font-family: 'Manrope';
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0;
+    line-height: 1.5; 
+  }
+  
+  .signup-link {
   text-align: center;
-  margin-top: 10px;
-}
-
-h2 {
-  text-align: center;
-  max-width: 26%;
-  margin: 0 auto;
-  font-size: 14px;
-  color: grey;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-form {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 50px 30px 30px 30px;
-}
-
-
-
-.input-field .icon {
-  position: absolute;
-  right: 10px;
-  color: var(--darkPurple);
-  font-size: 20px;
-}
-
-input::placeholder {
-  color: var(--darkPurple);
   font-family: 'Manrope';
-  font-size: 12px;
-  font-weight: 400;
-}
-
-button {
-  border-radius: 8px;
-  background-color: var(--darkPurple);
-  color: var(--whiteApp);
-  width: 150px;
-  height: 43px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-button:hover {
-  opacity: 0.9;
-}
-
-.signup-link {
-  text-align: center;
-  font-family: 'Manrope';
-}
-
-a {
+  }
+  
+  a {
   text-decoration: none;
   color: var(--darkPurple);
   font-weight: bold;
-}
-
-a:hover {
+  }
+  
+  a:hover {
   text-decoration: underline;
-}
-
-.input-field {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 280px; /* Define uma largura fixa no desktop */
-  max-width: 100%;
-}
-
-.input-field input {
-  width: 100%;
-  padding: 8px 12px;
-  border-radius: 56px;
-  font-size: 12px;
-  border: 1px solid #dddddd;
-  height: 40px;
-  background-color: transparent;
-  color: var(--darkPurple);
-  outline: none;
-}
-
-@media (max-width: 480px) {
-  h2 {
+  }
+  
+  @media (max-width: 1100px) {
+    h2 {
+      max-width: 26%; 
       font-size: 13px;
-      line-height: 1.4;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 13px; 
+      line-height: 1.4; 
       max-width: 78%;
+    }
   }
-
-  .input-field {
-      width: 90%;
-  }
-
-  .input-field input {
-      font-size: 14px;
-  }
-}
+  

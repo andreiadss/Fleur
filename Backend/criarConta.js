@@ -1,33 +1,24 @@
-import { auth, db } from "../../Backend/firebase.js";
-import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
-import { doc, setDoc } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-firestore.js";
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("criarContaForm");
 
-document.getElementById("criarContaForm").addEventListener("submit", async function (event) {
-    event.preventDefault();
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Impede o comportamento padrão de envio do formulário
 
-    const nomeUsuario = document.getElementById("nomeUsuario").value.trim();
-    const email = document.getElementById("emailUsuario").value.trim();
-    const senha = document.getElementById("senhaUsuario").value;
-    const confirmarSenha = document.getElementById("confirmarSenha").value;
-
-    if (senha !== confirmarSenha) {
-        alert("As senhas não coincidem!");
-        return;
-    }
-
-    try {
-        const userCredential = await createUserWithEmailAndPassword(auth, email, senha);
-        const user = userCredential.user;
-
-        await setDoc(doc(db, "usuarios", user.uid), {
-            nomeUsuario: nomeUsuario,
-            email: email
+        const formData = {};
+        new FormData(form).forEach((value, key) => {
+            formData[key] = value;
         });
 
-        alert("Conta criada com sucesso! Agora, finalize seu cadastro.");
+        // Verifica se a senha e a confirmação da senha coincidem
+        if (formData.senhaUsuario !== formData.confirmarSenha) {
+            alert("As senhas não coincidem. Tente novamente.");
+            return; // Impede o envio se as senhas não coincidirem
+        }
+
+        // Exibe os dados no console
+        console.log("Cadastro de Conta:", formData);
+
+        // Se as senhas coincidirem, redireciona para a próxima página
         window.location.href = "concluirCadastro.html";
-    } catch (error) {
-        console.error("Erro ao criar conta:", error);
-        alert("Erro ao criar conta: " + error.message);
-    }
+    });
 });
